@@ -7,6 +7,7 @@ import InputChat from '@/components/chat/chat_input'
 import AccueilChat from '@/components/chat/chat_accueil'
 import { message } from '@/types/chat'
 import { ChatMessageProps, ChatMessage } from '@/components/chat/chat_message'
+import ChatGPT from '@/components/chat/chat_api'
 
 export default function Home() {
   const [isChatStarted, setIsChatStarted] = React.useState(false);
@@ -60,6 +61,8 @@ export default function Home() {
       ) : (
         <div className='item-center max-w-3xl w-full flex-grow mx-auto'>
           <AccueilChat />
+          <h1 className="text-2xl font-bold">Interagir avec GPT-4</h1>
+          <ChatGPT />
           <InputChat onChatStart={handleChatStart} />
         </div>
       )}
