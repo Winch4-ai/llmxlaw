@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import { } from 'lucide-react'
-import { Card } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import InputChat from '@/components/chat/chat_input'
 import AccueilChat from '@/components/chat/chat_accueil'
