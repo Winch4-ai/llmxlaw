@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-montserrat: 'montserrat', sans-serif;
+  --font-montserrat-italic: 'montserratitalic', sans-serif;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'montserratitalic';
+  font-style: italic;
+  font-display: swap;
+  src: url("/public/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format('truetype');
+}
+
+
+body {
+  font-family: var(--font-montserrat);
+}
+
+@layer base {
+  :root {
+    --background: white;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 100% 19%; /* Bleu nuit */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 224.7 48.7% 45.3%; /* Pantone 7455 */
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 51 59% 74%; /* Pantone 7403 */
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 0 87.1% 59.4%; /* Pantone Warm Red */
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 12.4 100% 63%; /* Pantone 1635 */
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12.4 100% 63%; /* Pantone 1635 */
+    --chart-2: 224.7 48.7% 45.3%; /* Pantone 7455 */
+    --chart-3: 240 8.3% 38%; /* Pantone 2758 */
+    --chart-4: 51 59% 74%; /* Pantone 7403 */
+    --chart-5: 0 87.1% 59.4%; /* Pantone Warm Red */
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 224.7 48.7% 45.3%; /* Pantone 7455 */
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 240 8.3% 24%; /* Pantone 432 */
+    --sidebar-ring: 240 8.3% 38%; /* Pantone 2758 */
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 240 8.3% 38%; /* Pantone 2758 */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 224.7 48.7% 45.3%; /* Pantone 7455 */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 51 59% 74%; /* Pantone 7403 */
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 0 87.1% 59.4%; /* Pantone Warm Red */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 12.4 100% 63%; /* Pantone 1635 */
+    --destructive-foreground: 0 0% 98%;
+    --border: 224.7 48.7% 45.3%; /* Pantone 7455 */
+    --input: 240 8.3% 38%; /* Pantone 2758 */
+    --ring: 240 8.3% 38%; /* Pantone 2758 */
+    --chart-1: 12.4 100% 63%; /* Pantone 1635 */
+    --chart-2: 224.7 48.7% 45.3%; /* Pantone 7455 */
+    --chart-3: 240 8.3% 38%; /* Pantone 2758 */
+    --chart-4: 51 59% 74%; /* Pantone 7403 */
+    --chart-5: 0 87.1% 59.4%; /* Pantone Warm Red */
+    --sidebar-background: 240 8.3% 38%; /* Pantone 2758 */
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.7 48.7% 45.3%; /* Pantone 7455 */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 51 59% 74%; /* Pantone 7403 */
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 224.7 48.7% 45.3%; /* Pantone 7455 */
+    --sidebar-ring: 0 87.1% 59.4%; /* Pantone Warm Red */
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
